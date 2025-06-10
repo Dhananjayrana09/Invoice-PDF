@@ -170,21 +170,29 @@ node -e "console.log('Production JWT Secret:', require('crypto').randomBytes(64)
 
 ```
 pdf-invoice-service/
-├── app/                    # Next.js app directory
-│   ├── auth/              # Authentication pages
-│   ├── dashboard/         # Main dashboard
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Landing page
-├── components/            # React components
-│   ├── ui/               # shadcn/ui components
-│   └── InvoiceForm.tsx   # Invoice creation form
-├── server/               # Express.js backend
-│   ├── index.js          # Main server file
-│   └── pdfs/            # Generated PDF storage
-├── lib/                  # Utility functions
-├── .env.example          # Environment template
-└── package.json          # Dependencies and scripts
+├── Frontend/              # Next.js frontend application
+│   ├── app/              # Next.js app directory
+│   │   ├── auth/        # Authentication pages
+│   │   ├── dashboard/   # Main dashboard
+│   │   ├── globals.css  # Global styles
+│   │   ├── layout.tsx   # Root layout
+│   │   └── page.tsx     # Landing page
+│   ├── components/      # React components
+│   │   ├── ui/         # shadcn/ui components
+│   │   └── InvoiceForm.tsx  # Invoice creation form
+│   └── lib/            # Frontend utility functions
+│
+├── Backend/             # Express.js backend application
+│   ├── src/            # Source code
+│   │   ├── index.js    # Main server file
+│   │   ├── routes/     # API routes
+│   │   ├── models/     # Database models
+│   │   ├── middleware/ # Custom middleware
+│   │   └── utils/      # Backend utility functions
+│   ├── pdfs/          # Generated PDF storage
+│   └── .env.example   # Environment template
+│
+└── package.json        # Root dependencies and scripts
 ```
 
 ## 🛠️ Technology Stack
