@@ -195,7 +195,6 @@ pdf-invoice-service/
 └── package.json        # Root dependencies and scripts
 ```
 
-![image alt](https://github.com/Dhananjayrana09/Invoice-PDF/blob/ab33bd5dd0dd7cbedad63938ef2a769be2b5a0f5/7d7b1198-bb07-4640-a0d5-52ff94218b8e.pdf)
 
 ## 🛠️ Technology Stack
 
